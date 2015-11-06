@@ -1,14 +1,11 @@
 package zoo;
 
 public class Amfibi extends Animal implements Aquatic, Terrestre {
-    
-    @Override
-    public void reproduccio(){
 
-    //diferida?
+    public Amfibi(String nom, Animal pare, Animal mare) {
+        super(nom, pare, mare);
     }
-        
-    
+      
     
     @Override
     public void nedar(){
