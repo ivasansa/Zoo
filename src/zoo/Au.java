@@ -1,11 +1,9 @@
 package zoo;
 
 public class Au extends Animal implements Terrestre, Aeri {
-    
-    @Override
-    public void reproduccio(){
 
-    //diferida?
+    public Au(String nom, Animal pare, Animal mare) {
+        super(nom, pare, mare);
     }
     
     @Override

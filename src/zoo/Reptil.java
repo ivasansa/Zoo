@@ -1,12 +1,11 @@
 package zoo;
 
 public class Reptil extends Animal implements Terrestre, Aquatic {
-    
-    @Override
-    public void reproduccio(){
 
-    //diferida?
+    public Reptil(String nom, Animal pare, Animal mare) {
+        super(nom, pare, mare);
     }
+    
     
     @Override
     public void nedar(){

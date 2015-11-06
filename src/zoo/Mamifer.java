@@ -1,12 +1,12 @@
 package zoo;
 
 public class Mamifer extends Animal implements Aquatic, Terrestre {
-    
-    @Override
-    public void reproduccio(){
 
-    //diferida?
+    public Mamifer(String nom, Animal pare, Animal mare) {
+        super(nom, pare, mare);
     }
+    
+    
     
     @Override
     public void nedar(){

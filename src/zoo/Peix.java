@@ -1,12 +1,11 @@
 package zoo;
 
 public class Peix extends Animal implements Aquatic {
-    
-    @Override
-    public void reproduccio(){
 
-    //diferida?
+    public Peix(String nom, Animal pare, Animal mare) {
+        super(nom, pare, mare);
     }
+    
     
     @Override
     public void nedar(){
