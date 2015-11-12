@@ -6,6 +6,15 @@ public class Zona {
     private int superficie;
     private boolean net;
 
+    public Zona(int ID, String nom, int superficie, boolean net) {
+        this.ID = ID;
+        this.nom = nom;
+        this.superficie = superficie;
+        this.net = net;
+    }
+
+    
+    
     public int getID() {
         return ID;
     }

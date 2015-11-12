@@ -1,11 +1,14 @@
-package zoo;
+package animals;
 
-public class Amfibi extends Animal implements Aquatic, Terrestre {
+import animals.Aquatic;
+import animals.Animal;
 
-    public Amfibi(String nom, Animal pare, Animal mare) {
+public class Reptil extends Animal implements Terrestre, Aquatic {
+
+    public Reptil(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
     }
-      
+    
     
     @Override
     public void nedar(){

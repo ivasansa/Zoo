@@ -1,4 +1,7 @@
-package zoo;
+package animals;
+
+import animals.Aquatic;
+import animals.Animal;
 
 public class Peix extends Animal implements Aquatic {
 

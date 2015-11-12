@@ -1,5 +1,6 @@
 package zoo;
 
+import animals.Animal;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;

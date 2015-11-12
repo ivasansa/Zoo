@@ -1,10 +1,14 @@
-package zoo;
+package animals;
 
-public class Reptil extends Animal implements Terrestre, Aquatic {
+import animals.Aquatic;
+import animals.Animal;
 
-    public Reptil(String nom, Animal pare, Animal mare) {
+public class Mamifer extends Animal implements Aquatic, Terrestre {
+
+    public Mamifer(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
     }
+    
     
     
     @Override

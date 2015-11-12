@@ -1,12 +1,11 @@
-package zoo;
+package animals;
 
-public class Mamifer extends Animal implements Aquatic, Terrestre {
+public class Amfibi extends Animal implements Aquatic, Terrestre {
 
-    public Mamifer(String nom, Animal pare, Animal mare) {
+    public Amfibi(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
     }
-    
-    
+      
     
     @Override
     public void nedar(){

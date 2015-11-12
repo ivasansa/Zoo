@@ -1,4 +1,6 @@
-package zoo;
+package animals;
+
+import animals.Animal;
 
 public class Au extends Animal implements Terrestre, Aeri {
 
