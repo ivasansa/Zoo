@@ -1,5 +1,6 @@
 package animals;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -32,7 +33,10 @@ public class Animal {
         Date d1 = c.getTime(); //the midnight, that's the first second of the day.
         this.dataIngres = d1;
         
+        SimpleDateFormat sdf = new SimpleDateFormat("d MMM yyyy");
+        String aux = sdf.format(d1);
         
+        System.out.println(nom + " ha nascut el día "+aux) ;
         
     }
     public Animal(String nom) {
@@ -45,6 +49,10 @@ public class Animal {
         Date d1 = c.getTime(); //the midnight, that's the first second of the day.
         this.dataIngres = d1;
         
+        SimpleDateFormat sdf = new SimpleDateFormat("d MMM yyyy");
+        String aux = sdf.format(d1);
+        
+        System.out.println(nom + " ha nascut el día "+aux) ;
         
     }
     
@@ -160,9 +168,6 @@ public class Animal {
         this.zona = zona;
     }
     
-    
-    
-    
     public void morir(){
         Calendar c = new GregorianCalendar();
         c.set(Calendar.HOUR_OF_DAY, 0); //anything 0 - 23
@@ -170,14 +175,18 @@ public class Animal {
         c.set(Calendar.SECOND, 0);
         Date d1 = c.getTime(); //the midnight, that's the first second of the day.
         this.dataSortida = d1;
+        
+        
+        SimpleDateFormat sdf = new SimpleDateFormat("d MMM yyyy");
+        String aux = sdf.format(d1);
+        
+        System.out.println(nom + " ha mort el día "+aux) ;
     }
     
     public void transportar(Zona z){
         this.zona = z;
         System.out.println("L'animal " + nom + " ha estat traslladat a la zona " + z.getNom());
     }
-    
-    
 }
 
 enum Sexe {

@@ -47,6 +47,11 @@ public class Zona {
         this.net = net;
     }
 
+    @Override
+    public String toString() {
+        return "L'animal està a la zona "+nom;
+    }
+
     
     
 }

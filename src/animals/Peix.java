@@ -12,7 +12,7 @@ public class Peix extends Animal implements Aquatic {
     
     @Override
     public void nedar(){
-        System.out.println("El animal"+this.getNom()+" està nedant");
+        System.out.println("El animal "+this.getNom()+" està nedant");
     }
 
 }
