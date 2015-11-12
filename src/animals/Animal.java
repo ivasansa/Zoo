@@ -24,10 +24,29 @@ public class Animal {
         this.nom = nom;
         this.pare = pare;
         this.mare = mare;
+        
+        Calendar c = new GregorianCalendar();
+        c.set(Calendar.HOUR_OF_DAY, 0); //anything 0 - 23
+        c.set(Calendar.MINUTE, 0);
+        c.set(Calendar.SECOND, 0);
+        Date d1 = c.getTime(); //the midnight, that's the first second of the day.
+        this.dataIngres = d1;
+        
+        
+        
     }
-
-
-    
+    public Animal(String nom) {
+        this.nom = nom;
+        
+        Calendar c = new GregorianCalendar();
+        c.set(Calendar.HOUR_OF_DAY, 0); //anything 0 - 23
+        c.set(Calendar.MINUTE, 0);
+        c.set(Calendar.SECOND, 0);
+        Date d1 = c.getTime(); //the midnight, that's the first second of the day.
+        this.dataIngres = d1;
+        
+        
+    }
     
     public Sexe getSexe() {
         return sexe;
