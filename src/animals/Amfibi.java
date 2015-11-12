@@ -9,10 +9,10 @@ public class Amfibi extends Animal implements Aquatic, Terrestre {
     
     @Override
     public void nedar(){
-        System.out.println("Nedant");
+        System.out.println("El animal"+this.getNom()+" està nedant");
     }
     @Override
     public void caminar(){
-        System.out.println("Caminant");
+        System.out.println("El animal"+this.getNom()+" està caminant");
     }
 }

@@ -10,10 +10,10 @@ public class Au extends Animal implements Terrestre, Aeri {
     
     @Override
     public void volar(){
-        System.out.println("Volant");
+        System.out.println("El animal"+this.getNom()+" està volant");
     }
     @Override
     public void caminar(){
-        System.out.println("Caminant");
+        System.out.println("El animal"+this.getNom()+" està caminant");
     }
 }
