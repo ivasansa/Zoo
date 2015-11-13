@@ -1,4 +1,5 @@
 package zoo;
+import animals.*;
 
 public class Main {
 
@@ -13,8 +14,8 @@ public class Main {
         joseLuis.setDNI("54125784A");
         
         Zona aquari = new Zona(0001, "Aquari", 3000, false);
-        
-        //Peix flipper = new Peix()//
+        pepe.Acomiadar();
+       
         
     }
     
