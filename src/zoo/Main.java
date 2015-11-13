@@ -32,6 +32,9 @@ public class Main {
         Peix chanquete = new Peix("Chanquete", flipper, flapper);
         
         chanquete.morir();
+        
+        Zoo zoodeBarcelona = new Zoo("Paquito",12,120);
+        zoodeBarcelona.Tancar();
     }
     
 }

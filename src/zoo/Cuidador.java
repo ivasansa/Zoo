@@ -35,7 +35,7 @@ public class Cuidador extends Personal {
     /**
      * Mètode que posa l'atribut Net de la Classe Zona a true
      * Treu per pantalla una frase informativa
-     * @param z Objecte 
+     * @param z Objecte Zona a ser netejada
      */
     public void netejarGabia(Zona z){
         if(!z.isNet()){
@@ -47,7 +47,7 @@ public class Cuidador extends Personal {
     /**
      * Mètode que posa l'atribut Net de la Classe Zona a true
      * Treu per pantalla una frase informativa
-     * @param a 
+     * @param a Objecte Animal a ser netejat
      */
     public void netejarAnimal(Animal a){
         if(!a.isNet()){
@@ -56,25 +56,46 @@ public class Cuidador extends Personal {
         }
     }
     
+    /**
+     * Mètode que posa l'atribut Net de la Classe Zona a true
+     * Treu per pantalla una frase informativa
+     * @param a Objecte Animal a ser netejat
+     */
     public void alimentarAnimal(Animal a) {
         if(a.isTeGana()){
             a.setTeGana(false);
             System.out.println("El cuidador " + this.getNom() +" ha alimentat l'animal " + a.getNom() + " amb " + a.getDieta());
         }
     }
-
+    
+    /**
+     * Getter de l'atribut ID
+     * @return ID
+     */
     public int getID() {
         return ID;
     }
-
+    
+    /**
+     * Setter de l'atribut ID
+     * @param ID 
+     */
     public void setID(int ID) {
         this.ID = ID;
     }
-
+    
+    /**
+     * Getter de l'atribut Rang
+     * @return rang
+     */
     public String getRang() {
         return rang;
     }
-
+    
+    /**
+     * Setter de l'atribut Rang
+     * @param rang 
+     */
     public void setRang(String rang) {
         this.rang = rang;
     }

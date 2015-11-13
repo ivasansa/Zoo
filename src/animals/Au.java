@@ -1,38 +1,31 @@
 package animals;
 
 import animals.Animal;
-
 /**
- * Classe que representa un Au
- * @author ivan
+ * Classe que representa a una Au
+ * Hereta de la classe Animal i
+ * implementa les interficies Terrestre i Aeri
+ * 
  */
 public class Au extends Animal implements Terrestre, Aeri {
 
-    /**
-     * Constructor de la classe Au
-     * @param nom Nom de l'animal
-     * @param pare  Objecte del Animal pare
-     * @param mare Objecte del Animal mare
-     */
     public Au(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
     }
-    
     /**
-     * Implementacio del mètode volar de la interfície Aeri
+     * Implementació del mètode volar de la interficie Aeri
      * @see Aeri
      */
     @Override
     public void volar(){
-        System.out.println("El animal "+this.getNom()+" està volant");
+        System.out.println("El animal"+this.getNom()+" està volant");
     }
-    
     /**
-     * Implementacio del mètode caminar de la interfície Terrestre
+     * Implementació del mètode caminar de la interficie Terrestre
      * @see Terrestre
      */
     @Override
     public void caminar(){
-        System.out.println("El animal "+this.getNom()+" està caminant");
+        System.out.println("El animal"+this.getNom()+" està caminant");
     }
 }
