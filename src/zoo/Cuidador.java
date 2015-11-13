@@ -5,10 +5,21 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+/**
+ * Classe que representa un Cuidador
+ * Hereta de la Classe Personal
+ * @author ivan
+ */
 public class Cuidador extends Personal {
     private int ID;
     private String rang;
-
+    
+    /**
+     * Constructor de la classe Cuidador
+     * Inicialitza l'atribut dataIngres a la data actual
+     * @param ID Identificador de Cuidador
+     * @param rang Rang jeràrquic del cuidador
+     */
     public Cuidador(int ID, String rang) {
         this.ID = ID;
         this.rang = rang;
@@ -21,6 +32,11 @@ public class Cuidador extends Personal {
         this.setDataIngres(d1);
     }
     
+    /**
+     * Mètode que posa l'atribut Net de la Classe Zona a true
+     * Treu per pantalla una frase informativa
+     * @param z Objecte 
+     */
     public void netejarGabia(Zona z){
         if(!z.isNet()){
             z.setNet(true);
@@ -28,6 +44,11 @@ public class Cuidador extends Personal {
         }
     }
     
+    /**
+     * Mètode que posa l'atribut Net de la Classe Zona a true
+     * Treu per pantalla una frase informativa
+     * @param a 
+     */
     public void netejarAnimal(Animal a){
         if(!a.isNet()){
             a.setNet(true);
