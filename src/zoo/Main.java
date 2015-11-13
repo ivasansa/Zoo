@@ -15,6 +15,10 @@ public class Main {
         
         Zona aquari = new Zona(0001, "Aquari", 3000, false);
         pepe.Acomiadar();
+        
+        Zoo zoodeBarcelona = new Zoo("Paquito",12,120);
+        zoodeBarcelona.Tancar();
+ 
        
         
     }
