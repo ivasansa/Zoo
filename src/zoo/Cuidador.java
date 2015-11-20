@@ -23,7 +23,7 @@ public class Cuidador extends Personal {
     public Cuidador(int ID, String rang) {
         this.ID = ID;
         this.rang = rang;
-        
+
         Calendar c = new GregorianCalendar();
         c.set(Calendar.HOUR_OF_DAY, 0); //anything 0 - 23
         c.set(Calendar.MINUTE, 0);

@@ -8,9 +8,21 @@ import animals.Animal;
  * 
  */
 public class Au extends Animal implements Terrestre, Aeri {
-
+    /**
+     * Constructor de la classe Au
+     * @param nom
+     * @param pare
+     * @param mare 
+     */
     public Au(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
+    }
+    /**
+     * Constructor sobrecarregat de la classe Au
+     * @param nom
+     */    
+    public Au(String nom) {
+        super(nom);
     }
     /**
      * Implementació del mètode volar de la interficie Aeri

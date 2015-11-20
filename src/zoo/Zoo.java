@@ -93,7 +93,7 @@ public class Zoo {
         SimpleDateFormat sdf = new SimpleDateFormat("d MMM yyyy");
         String aux = sdf.format(d1);
         
-        System.out.println("El Zoo "+ nom + " s'ha inaugurat el día "+aux) ;
+        System.out.println("El Zoo de "+ nom + " s'ha inaugurat el día "+aux);
     }
      /**
       * Mètode de la Classe Zoo que inicialitza la dataCreacio a la data Actual

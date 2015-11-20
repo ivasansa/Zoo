@@ -10,11 +10,23 @@ import animals.Animal;
  * 
  */
 public class Mamifer extends Animal implements Aquatic, Terrestre {
-
+    
+    /**
+     * Constructor de la Classe Mamífer
+     * @param nom
+     * @param pare
+     * @param mare 
+     */
     public Mamifer(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
     }
-      
+    /**
+     * Constructor sobrecarregat de la classe Mamifer
+     * @param nom 
+     */
+    public Mamifer(String nom){
+        super(nom);
+    }  
      /**
      * Implementació del mètode nedar de la interficie Aquàtic
      * @see Aquatic

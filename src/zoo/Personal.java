@@ -14,6 +14,7 @@ public abstract class Personal {
     private String nom;
     private Date dataIngres;
     private Date dataSortida;
+    
     /**
      * Mètode Acomidar que inicialitza la data de sortida a la data actual 
      */
@@ -81,6 +82,5 @@ public abstract class Personal {
     public void setDataSortida(Date dataSortida) {
         this.dataSortida = dataSortida;
     }
-    
     
 }

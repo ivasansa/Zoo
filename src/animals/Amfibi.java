@@ -17,6 +17,13 @@ public class Amfibi extends Animal implements Aquatic, Terrestre {
     public Amfibi(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
     }
+    /**
+     * Constructor sobrecarregat de la classe Amfibi
+     * @param nom 
+     */
+    public Amfibi(String nom){
+        super(nom);
+    }
       
     /**
      * Implementacio del mètode nedar de la interfície Aquatic

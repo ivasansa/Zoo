@@ -20,6 +20,13 @@ public class Peix extends Animal implements Aquatic {
     public Peix(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
     }
+    /**
+     * Constructor sobrecarregat de la classe Peix
+     * @param nom 
+     */
+    public Peix(String nom) {
+        super(nom);
+    }
     
     /**
      * Implementacio del mètode nedar de la interfície Aquatic

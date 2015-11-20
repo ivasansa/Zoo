@@ -18,6 +18,7 @@ public class Zona {
         this.nom = nom;
         this.superficie = superficie;
         this.net = net;
+        System.out.println("S'ha creat la zona "+nom);
     }
 
     

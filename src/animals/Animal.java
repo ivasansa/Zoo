@@ -68,7 +68,7 @@ public class Animal {
         SimpleDateFormat sdf = new SimpleDateFormat("d MMM yyyy");
         String aux = sdf.format(d1);
         
-        System.out.println(nom + " ha nascut el día "+aux) ;
+        System.out.println(nom + " va ingresar al Zoo el día "+aux) ;
         
     }
     
@@ -304,6 +304,7 @@ public class Animal {
         this.zona = z;
         System.out.println("L'animal " + nom + " ha estat traslladat a la zona " + z.getNom());
     }
+    
 }
 
 enum Sexe {

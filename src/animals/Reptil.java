@@ -20,7 +20,13 @@ public class Reptil extends Animal implements Terrestre, Aquatic {
     public Reptil(String nom, Animal pare, Animal mare) {
         super(nom, pare, mare);
     }
-    
+    /**
+     * Constructor sobrecarregat de la classe Reptil
+     * @param nom 
+     */
+    public Reptil(String nom){
+        super(nom);
+    }  
     /**
      * Implementacio del mètode nedar de la interfície Aquatic
      * @see Aquatic
