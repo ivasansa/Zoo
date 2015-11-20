@@ -305,6 +305,11 @@ public class Animal {
         System.out.println("L'animal " + nom + " ha estat traslladat a la zona " + z.getNom());
     }
     
+    @Override
+    public String toString(){
+        return "Nom: " + getNom();
+    }
+    
 }
 
 enum Sexe {

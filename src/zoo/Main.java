@@ -1,5 +1,6 @@
 package zoo;
 import animals.*;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -46,6 +47,25 @@ public class Main {
         
        //El Zoo plega
         zoo.Tancar();
+        
+       //ArrayList<Animal> ListaAnimales;
+       //ListaAnimales = new ArrayList<Animal>();
+       Mamifer paquito = new Mamifer("paquito");
+       Reptil manolito = new Reptil("manolito");
+       Au pepito = new Au("pepito");
+       Amfibi joselito = new Amfibi("joselito");
+        
+       ArrayList<Animal> ListaAnimales = new ArrayList<Animal>();
+
+        ListaAnimales.add(flapper);
+        ListaAnimales.add(paquito);
+        ListaAnimales.add(manolito); 
+        ListaAnimales.add(pepito); 
+        ListaAnimales.add(joselito);
+
+        for (Animal aux : ListaAnimales){
+            System.out.println(aux);
+        }
         
     }
     
